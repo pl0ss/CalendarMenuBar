@@ -14,6 +14,7 @@
 		F649A0612B2A61DB0080D6B9 /* CalendarMenuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649A0602B2A61DB0080D6B9 /* CalendarMenuBarTests.swift */; };
 		F649A06B2B2A61DB0080D6B9 /* CalendarMenuBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649A06A2B2A61DB0080D6B9 /* CalendarMenuBarUITests.swift */; };
 		F649A06D2B2A61DB0080D6B9 /* CalendarMenuBarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649A06C2B2A61DB0080D6B9 /* CalendarMenuBarUITestsLaunchTests.swift */; };
+		F649A07A2B2A622F0080D6B9 /* CalendarMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649A0792B2A622F0080D6B9 /* CalendarMenuBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F649A0662B2A61DB0080D6B9 /* CalendarMenuBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarMenuBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F649A06A2B2A61DB0080D6B9 /* CalendarMenuBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMenuBarUITests.swift; sourceTree = "<group>"; };
 		F649A06C2B2A61DB0080D6B9 /* CalendarMenuBarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMenuBarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F649A0792B2A622F0080D6B9 /* CalendarMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMenuBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				F649A0522B2A61DB0080D6B9 /* Assets.xcassets */,
 				F649A0572B2A61DB0080D6B9 /* CalendarMenuBar.entitlements */,
 				F649A0542B2A61DB0080D6B9 /* Preview Content */,
+				F649A0792B2A622F0080D6B9 /* CalendarMenuBar.swift */,
 			);
 			path = CalendarMenuBar;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F649A07A2B2A622F0080D6B9 /* CalendarMenuBar.swift in Sources */,
 				F649A0512B2A61DA0080D6B9 /* ContentView.swift in Sources */,
 				F649A04F2B2A61DA0080D6B9 /* CalendarMenuBarApp.swift in Sources */,
 			);
