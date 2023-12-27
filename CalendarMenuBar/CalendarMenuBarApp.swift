@@ -4,38 +4,29 @@
 //
 //  Created by Kevin Ploß on 13.12.23.
 //
-
 import SwiftUI
 
+
 @main
-struct MenuBarApp: App {
-    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+struct CustomApp: App {
     var body: some Scene {
-        Settings {
-            EmptyView()
+        MenuBarExtra("UtilityApp", systemImage: "hammer") { //Text statt icon: systemImage entfernen
+            AppMenu()
         }
     }
 }
 
-class AppDelegate: NSObject, NSApplicationDelegate {
-    var statusItem: NSStatusItem!
+struct AppMenu: View {
+    func action1() {}
+    func action2() {}
+    func action3() {}
 
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the status item
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        if let button = statusItem.button {
-            button.title = "Test"
-        }
+    var body: some View {
+        Button(action: action1, label: { Text("Action 1") })
+        Button(action: action2, label: { Text("Action 2") })
         
-        // Create a simple menu
-        let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "q"))
-        statusItem.menu = menu
-    }
+        // Divider()
 
-    @objc func quit() {
-        NSApplication.shared.terminate(self)
+        Button(action: action3, label: { Text("Action 3") })
     }
 }
-
